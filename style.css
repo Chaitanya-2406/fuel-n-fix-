@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    border: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: #0f1111;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+}
+.nav-logo{
+    padding-top: 15px;
+    font-size: 33px;
+    padding-left: 28px;
+    color: green;
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.nav-items{
+    margin-left: 850px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+li{
+    padding: 15px;
+    color: white;
+    font-size: larger;
+}
+li:hover{
+    background-color: darkgreen;
+    color: white;
+}
+/* .hero-section{
+    background-image: url("car.jpg");
+    background-size: cover;
+} */
+
+main{
+    background-image: url("car.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.service{
+    width: 100vw;
+    height: 70vh;
+    background-color: #0f1111;
+}
+#p-ser{
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 20px;
+    text-decoration: underline green;
+    color: white;
+
+}
+.hero-section{
+    color: white;
+    align-items: center;
+}
+
+
+p{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+#para2{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.btn{
+
+    height: 100px;
+    width: 100px;
+    margin-top: 350px;
+    margin-left: 100px;
+
+}
+#btn{
+    color: #0f1111;
+    background-color: white;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#btn:hover{
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+}
+.service-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.ser1{
+    /* background-image: url("green-fuel-icon-17.png");
+    background-size: cover; */
+    height: 350px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 22px;
+    
+}
+.ser2{
+    
+    height: 350px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 22px;
+}
+.ser3{
+    
+    height: 350px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 22px;
+}
+/* .fuel-btn{
+    padding-top: 250px;
+    padding-left: 111px;
+    color: black;
+    background-color: white;
+    
+    
+} */
+
+#btn-1{
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.fuel-btn{
+    
+    margin-left: 95px;
+    margin-top: 90px;
+    color: white;
+    background-color: green;
+    height: 45px;
+    width: 120px;
+    border: 3px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: large;
+}
+/* .fuel-btn:hover{
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    height: 49px;
+    width: 110px;
+    font-size: large;
+
+} */
+
+.mech-button{
+    margin-left: 70px;
+    margin-top: 90px;
+    color: white;
+    background-color: green;
+    height: 45px;
+    width: 180px;
+    border: 3px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: large;
+}
+.sub{
+    margin-left: 45px;
+    margin-top: 90px;
+    color: white;
+    background-color: green;
+    height: 45px;
+    width: 220px;
+    border: 3px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: large;
+}
+.fuel-head{
+    color: lightgreen;
+    margin-top: 15px;
+    margin-left: 64px;
+    font-size: 32px;
+}
+.mech-head{
+    color: lightgreen;
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 32px;
+}
+.sub-head{
+    color: lightgreen;
+    margin-top: 15px;
+    margin-left: 64px;
+    font-size: 32px;
+}
+.fuel-cont{
+    height: 110px;
+    width: 220px;
+    color: white;
+    margin-top: 90px;
+    margin-left: 50px;
+    font-size: 19px;
+}
+
+.mech-cont{
+    height: 110px;
+    width: 220px;
+    color: white;
+    margin-top: 90px;
+    margin-left: 40px;
+    font-size: 19px;
+}
+.sub-cont{
+    height: 110px;
+    width: 220px;
+    color: white;
+    margin-top: 90px;
+    margin-left: 40px;
+    font-size: 19px;
+}
+
+.footer{
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.abt{
+    height: 150px;
+    width: 450px;
+    font-size: large;
+    justify-content: center;
+    margin-left: 65px;
+}   
+.link{
+    height: 150px;
+    width: 300px;
+    text-decoration: underline;
+    
+}
+.social{
+    height: 150px;
+    width: 300px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+hr{
+    color: white;
+    width: 500%;
+    background-color: blue;
+}
+.line{
+    width: 100vw;
+    height: 10px;
+    background-color: black;
+}

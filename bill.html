@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel'n'Fix Bill</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border" style="font-weight: bolder;">Fuel'n'Fix</div>
+            <div class="nav-items">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#p-ser"><li>Services</li></a>
+                    <a href="#footer"><li>About Us</li></a>
+                    <a href="#"><li id="login">LogIn/SignUp</li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Billing Details</h1>
+        <div id="billDetails"></div>
+    </div>
+
+    <script>
+        const fuelPrices = {
+            Petrol: 94,  // Example prices per liter
+            Diesel: 85,
+            "Natural Gas": 0.80
+        };
+
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                fuelType: params.get('fuelType'),
+                amount: parseFloat(params.get('amount')),
+                lat: parseFloat(params.get('lat')),
+                lng: parseFloat(params.get('lng'))
+            };
+        }
+
+        function displayBillDetails() {
+            const { fuelType, amount, lat, lng } = getQueryParams();
+            const billDetailsDiv = document.getElementById('billDetails');
+
+            const pricePerLiter = fuelPrices[fuelType];
+            const totalPrice = pricePerLiter * amount;
+
+            billDetailsDiv.innerHTML = `
+                <table>
+                    <tr>
+                        <th>Fuel Type</th>
+                        <td>${fuelType}</td>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <td>${amount} liters</td>
+                    </tr>
+                    <tr>
+                        <th>Price per Liter</th>
+                        <td>₹${pricePerLiter.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                        <th>Total Price</th>
+                        <td>₹${totalPrice.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                        <th>Location</th>
+                        <td>Latitude ${lat}, Longitude ${lng}</td>
+                    </tr>
+                </table>
+                <p>Thank you for choosing Fuel'n'Fix!</p>
+            `;
+        }
+
+        // Display bill details when the page loads
+        window.onload = displayBillDetails;
+    </script>
+</body>
+</html>

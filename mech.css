@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    border: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-image: url("car2.jpg");
+    background-size: cover;
+}
+
+.navbar{
+    background-color: #0f1111;
+    height: 70px;
+    width: 100vw;
+    /* position: fixed; */
+}
+.nav-logo{
+    padding-top: 15px;
+    font-size: 33px;
+    padding-left: 28px;
+    color: green;
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.nav-items{
+    margin-left: 850px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+li{
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+li:hover{
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    /* position: relative; */
+    height: 80vh;
+    width: 75vh;
+    background-color: white;
+    margin-top: 65px; 
+    margin-left: 460px;
+    background-color: rgba(9, 8, 10, 0.675);
+}
+
+form{
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+select, input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h2{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: white    ;
+}
+h1{
+    color: green;
+    font-weight: bolder;
+    padding-bottom: 25px;
+    padding-left: 230px;
+    padding-top: 10px;
+}
+#btn{
+    width: 95%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#btn:hover{
+    background-color: green;
+    color: white;
+}
+.add{
+    width: 93%;
+    height: 75px;
+    
+    margin-top: 0px;
+    margin-left: 00px;
+    color: white;
+    border: 3px solid white;
+}
+.showDetails{
+    background-color: white;
+    color: white;
+    font-size: 0.1px;
+}
+.fullAddress{
+    background-color: white;
+    color: white;
+    font-size: 0.1px;
+}
+.formattedAddress{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#Order{
+    margin-top: 65px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#Order:hover{
+    background-color: green;
+    color: white;
+}
+
+.hide{
+    background-color: white;
+    color: white;
+    border: none;
+    
+}
+.show{
+    color: black;
+    border: 3px solid black;
+
+}
+
+#map{
+    margin-top: 30px;
+    margin-left: 1s5px;
+}
+
+#cbtn{
+    width: 95%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#cbtn:hover{
+    background-color: green;
+    color: white;
+}
+#confirm-btn{
+    width: 96%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+#confirm-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+#file{
+    margin-top: 10px;
+}
+
+#btn{
+    margin-top: 10px;
+}

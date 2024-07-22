@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="fuel.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border" style="font-weight: bolder;">Fuel'n'Fix</div>
+            <div class="nav-items">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#p-ser"><li>Services</li></a>
+                    <a href="#footer"><li>About Us</li></a>
+                    <a href="#"><li id="login">LogIn/SignUp</li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Order Confirmation</h1>
+        <div id="orderDetails"></div>
+    </div>
+
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                fuelType: params.get('fuelType'),
+                amount: params.get('amount'),
+                lat: params.get('lat'),
+                lng: params.get('lng')
+            };
+        }
+
+        function displayOrderDetails() {
+            const { fuelType, amount, lat, lng } = getQueryParams();
+            const orderDetailsDiv = document.getElementById('orderDetails');
+
+            orderDetailsDiv.innerHTML = `
+                <p><strong>Fuel Type:</strong> ${fuelType}</p>
+                <p><strong>Amount:</strong> ${amount} liters</p>
+                <p><strong>Location:</strong> Latitude ${lat}, Longitude ${lng}</p>
+                <p>Your order has been confirmed and is being processed. Thank you for choosing Fuel'n'Fix!</p>
+            `;
+        }
+
+        // Display order details when the page loads
+        window.onload = displayOrderDetails;
+    </script>
+</body>
+</html>

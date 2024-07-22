@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+
+    <div>
+        <h3>Fuel Type:</h3>
+        <p id="fuelType"></p>
+    </div>
+
+    <div>
+        <h3>Amount (in liters):</h3>
+        <p id="amount"></p>
+    </div>
+
+    <script>
+        // Get form data from URL parameters
+        var params = new URLSearchParams(window.location.search);
+        var fuelType = params.get('fuelType');
+        var amount = params.get('amount');
+
+        // Display form data on the page
+        document.getElementById('fuelType').textContent = fuelType;
+        document.getElementById('amount').textContent = amount;
+    </script>
+</body>
+</html>
